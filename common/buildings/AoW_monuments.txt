@@ -26,7 +26,6 @@
 	possible = { 
 		state_region = s:STATE_PUERTO_RICO
 	}
-
 	
 	required_construction = construction_cost_monument
 }

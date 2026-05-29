@@ -2,8 +2,15 @@
 
 本模组是对原[url]https://steamcommunity.com/sharedfiles/filedetails/?id=2924719003[/url]，作者：[b]Vik Beilier[/b]的更新版本。所有功劳归于原作者，感谢其最初的概念和素材。
 
-1.1 版本已更新! 如果想要继续您的存档: https://github.com/TZSXFJH/Age-of-Wizardry/releases/tag/1.0
-更新日志: 
+更新日志:
+新增：DLC 模块支持及 DLC GUI 集成（Age of Wizardry 现在作为 DLC 在游戏中显示）。
+新增：法师训练池系统——法师不再通过资质自然生成，改为从训练池中转化现有人口。建筑产出训练量；每月池累积至 1000 时，转化一个人口为法师。每年：遗忘率 50% + 按州总人口 1% 自然觉醒。
+新增：驱动法师转化机制的脚本值、脚本效果与 on_actions。
+新增：人口修正类型——building_employment_mages_add、building_mages_mortality_mult、state_mages_investment_pool_efficiency_mult。
+平衡：学院重做——简化生产方式，移除煤转金炼金术，调整创新产出与法师雇佣量。
+UI：州面板加宽，修正显示重新排版。
+
+历史更新: 
 - 三种新商品: 水晶, 黑曜石, 魔法帽
 - 新建筑: 宝石矿场, 可以在有水晶和黑曜石矿藏的地方建造
 - 许多新的生产方式

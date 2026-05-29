@@ -2,9 +2,15 @@
 
 This mod is a revived and updated version of the original https://steamcommunity.com/sharedfiles/filedetails/?id=2924719003 by [b]Vik Beilier[/b]. Since the original mod was no longer being maintained, I have updated it to be fully compatible with the latest version of Victoria 3. All credit goes to the original creator for the initial concept and assets.
 
-v1.1 Update Released! Save game compatibility (v1.0): https://github.com/TZSXFJH/Age-of-Wizardry/releases/tag/1.0
-
 Update Notes:
+New: DLC support and DLC GUI integration (Age of Wizardry now appears in-game as a DLC module).
+New: Mage training pool system — mages are now converted from existing pops via a training pool instead of natural qualifications. Buildings generate training rate; every month when the pool reaches 1000, one pop converts to a mage. Yearly: 50% forget rate + 1% natural awakening from total state population.
+New: Script values, scripted effects, and on_actions driving the mage conversion mechanic.
+New: Pop modifier types — building_employment_mages_add, building_mages_mortality_mult, state_mages_investment_pool_efficiency_mult.
+Balance: Academy overhaul — simplified production methods, removed coal-to-gold transmutation, adjusted innovation output and mage employment.
+UI: States panel widened and modifier display reorganized.
+
+Previous Updates:
 New Goods: Crystal, Obsidian, Wizard Hat.
 New Building: Gem Mine (requires Crystal/Obsidian deposits).
 Production: Multiple new production methods added.

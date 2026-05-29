@@ -1,2 +1,4 @@
 ﻿concept_magic_density = {}
 
+concept_mage_potential = {}
+

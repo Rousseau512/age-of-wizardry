@@ -5,8 +5,17 @@
  state_building_magic_tower_max_level_add: "Magic Tower's max level added by Technology"
  building_employment_mages_add_desc: "Modifies the amount of @mages! mages a building can hire per level"
  building_employment_mages_add: "@mages! mages Per level"
+ state_mage_training_rate: "State Mage Training Rate"
+ state_mage_training_rate_desc: "Number of candidates added to the Mage Potential pool each month."
+ state_mage_forget_rate: "State Mage Forget Rate"
+ state_mage_forget_rate_desc: "Additional forgetting rate modifier applied to the Mage Potential pool each year."
+ state_mage_awakening_rate: "State Mage Awakening Rate"
+ state_mage_awakening_rate_desc: "Additional awakening rate modifier applied to total state population each year."
 
  modifier_magic_drained: "Magic density reduced"
+
+ mage_base_values: "Age of Wizardry Base Values"
+ mage_base_values_desc: "The base annual forgetting rate and natural awakening rate for the Mage Potential system."
  
  popneed_magic_supply: "Magic Supply"
 

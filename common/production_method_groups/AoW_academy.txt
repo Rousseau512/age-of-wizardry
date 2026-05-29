@@ -9,24 +9,3 @@
 		pm_magic_and_philosophy
 	}
 }
-
-REPLACE_OR_CREATE:pmg_academy_production = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	ai_selection = most_productive
-
-	production_methods = {
-		pm_academy_inactive
-		pm_magic_infused_art_and_culture
-	}
-}
-
-REPLACE_OR_CREATE:pmg_magic_practice = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	ai_selection = most_productive
-
-	production_methods = {
-		pm_idle_mode_ac
-		pm_coal_to_gold_practice
-		pm_mass_coal_to_gold_practice
-	}
-}

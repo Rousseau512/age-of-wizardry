@@ -50,14 +50,6 @@
  pm_magic_and_ethics: "魔法伦理学"
  pm_magic_and_philosophy: "魔法哲学"
 
- pmg_academy_production: "艺术"
- pm_academy_inactive: "未生效"
- pm_magic_infused_art_and_culture: "附魔技艺"
-
- pmg_magic_practice: "魔法练习"
- pm_idle_mode_ac: "无魔法练习"
- pm_coal_to_gold_practice: "煤变金炼成阵"
- pm_mass_coal_to_gold_practice: "大功率煤变金炼成阵"
 
  pmg_AOW_medical_aid: "医疗救助"
  pm_healing_potion: "治疗药水"
@@ -84,6 +76,9 @@
  pm_assembly_lines_building_hsi: "魔能动力线"
 
  modifier_magic_drained: "魔力浓度减少"
+
+ mage_base_values: "魔法时代基础值"
+ mage_base_values_desc: "法师潜力系统的基础每年遗忘率与自然觉醒率。"
  popneed_magic_supply: "魔法用品"
  pm_wound_dressing: "伤口敷料"
 
@@ -98,6 +93,12 @@
  state_building_magic_tower_max_level_add: "科技加成魔能塔最大等级"
  building_employment_mages_add_desc: "修正建筑每等级可以雇佣的@mages!法师数量"
  building_employment_mages_add: "每级@mages!法师"
+ state_mage_training_rate: "州法师训练率"
+ state_mage_training_rate_desc: "每月添加到法师潜力池的候选人数。"
+ state_mage_forget_rate: "州法师遗忘率"
+ state_mage_forget_rate_desc: "每年额外施加于法师潜力池的遗忘比例修正。"
+ state_mage_awakening_rate: "州法师觉醒率"
+ state_mage_awakening_rate_desc: "每年额外施加于州总人口的自然觉醒比例修正。"
 
 
  building_mages_mortality_mult: "@mages!法师死亡率"

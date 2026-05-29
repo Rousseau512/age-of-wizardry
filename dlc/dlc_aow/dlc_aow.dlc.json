@@ -1,0 +1,17 @@
+{
+  "id": {
+    "steam": "0",
+    "paradox": "dlc_aow"
+  },
+  "displayName": {
+    "en": "Age of Wizardry"
+  },
+  "category": {
+    "en": "DLC"
+  },
+  "description": {
+    "en": "Magic meets industrialization in Earth 9981, where wizards, enchanted weapons, and arcane rituals reshape the Victorian era."
+  },
+  "thumbnailPath": "thumbnail.png",
+  "thirdPartyContent": true
+}

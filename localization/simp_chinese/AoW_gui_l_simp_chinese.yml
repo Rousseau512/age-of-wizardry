@@ -1,5 +1,16 @@
 ﻿l_simp_chinese:
+  # DLC
+  dlc_aow: "魔法纪元"
+  dlc_aow_desc: "在 9981 号地球，魔法与工业化相融，法师、附魔武器与奥术仪式重塑了维多利亚时代。"
+
   # Scripted gui used by button
   gui_sidebar_aow_button: "gui_sidebar_aow_button"
   # Name of the button that is shown in the hover popout
   gui_sidebar_aow_button_desc: "魔法"
+  STATE_MAGE_POOL: "[concept_mage_potential]\n[State.MakeScope.ScriptValue('state_mage_pool_display')|0]"
+  STATE_MAGE_POOL_TEXT: "法师潜力"
+  STATE_MAGE_POOL_TOOLTIP: "#header @mages! $STATE_MAGE_POOL_TEXT$#!\n$STATE_MAGE_POOL_TOOLTIP_TEXT$\n$TOOLTIP_DELIMITER$\n当前人数: [State.MakeScope.ScriptValue('state_mage_pool_display')|0]\n每月训练量: #tooltippable #tooltip:[State.GetTooltipTag],STATE_MAGE_TRAINING_BREAKDOWN [State.MakeScope.ScriptValue('state_mage_training_rate')|0]#!#!\n每年遗忘: #tooltippable #tooltip:[State.GetTooltipTag],STATE_MAGE_FORGET_BREAKDOWN [State.MakeScope.ScriptValue('state_mage_effective_forget_rate')|%0]#!#!\n每年觉醒: #tooltippable #tooltip:[State.GetTooltipTag],STATE_MAGE_AWAKENING_BREAKDOWN [State.MakeScope.ScriptValue('state_mage_effective_awakening_rate')|%0]#!#!"
+  STATE_MAGE_POOL_TOOLTIP_TEXT: "已经过训练、准备成为法师的人群。"
+  STATE_MAGE_TRAINING_BREAKDOWN: "#header 每月法师训练量#!\n[State.GetName] 每月 [State.MakeScope.ScriptValue('state_mage_training_rate')|0] 人\n$TOOLTIP_DELIMITER$\n[State.GetModifier.GetFullEntryDescFor('state_mage_training_rate')]"
+  STATE_MAGE_FORGET_BREAKDOWN: "#header 每年遗忘比例#!\n[State.GetName] 每年遗忘 [State.MakeScope.ScriptValue('state_mage_effective_forget_rate')|%0]\n$TOOLTIP_DELIMITER$\n[State.GetModifier.GetFullEntryDescFor('state_mage_forget_rate')]"
+  STATE_MAGE_AWAKENING_BREAKDOWN: "#header 每年自然觉醒率#!\n[State.GetName] 每年觉醒 [State.MakeScope.ScriptValue('state_mage_effective_awakening_rate')|%0]\n$TOOLTIP_DELIMITER$\n[State.GetModifier.GetFullEntryDescFor('state_mage_awakening_rate')]"

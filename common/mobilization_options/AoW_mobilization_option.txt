@@ -281,7 +281,7 @@ REPLACE_OR_CREATE:mobilization_option_early_exoskeleton = {
 	}
 	unit_modifier = {
 		unit_defense_add = 30
-		military_formation_movement_speed_mult = 0.2
+		military_formation_army_movement_speed_mult = 0.2
 		military_formation_mobilization_speed_mult = -0.1
 	}
 	ai_weight = {
@@ -342,7 +342,7 @@ REPLACE_OR_CREATE:mobilization_option_exoskeleton = {
 	unit_modifier = {
 		unit_offense_add = 25
 		unit_defense_add = 40
-		military_formation_movement_speed_mult = 0.5
+		military_formation_army_movement_speed_mult = 0.5
 		military_formation_mobilization_speed_mult = -0.15
 		unit_recovery_rate_add = 0.05
 		unit_morale_damage_mult = 0.15
@@ -394,7 +394,7 @@ REPLACE_OR_CREATE:mobilization_option_portable_shield_module = {
 	}
 	unit_modifier = {
 		unit_defense_add = 10
-		military_formation_movement_speed_mult = -0.05
+		military_formation_army_movement_speed_mult = -0.05
 	}
 	ai_weight = {
 		value = 1

@@ -54,7 +54,7 @@ company_aow_alchemy = {
 		}
 	}
 	prosperity_modifier = {
-		building_group_bg_gate_magic_industry = 0.1
+		building_group_bg_gate_magic_industry_throughput_add = 0.1
 		country_weekly_innovation_mult = 0.25
 		country_weekly_innovation_max_add = 25
 	}

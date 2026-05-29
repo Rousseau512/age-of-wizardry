@@ -1,0 +1,40 @@
+on_monthly_pulse_country = {
+	on_actions = {
+		mage_base_values_pulse
+	}
+}
+
+on_monthly_pulse_state = {
+	on_actions = {
+		mage_conversion_monthly_pulse
+	}
+}
+
+on_yearly_pulse_state = {
+	on_actions = {
+		mage_conversion_yearly_pulse
+	}
+}
+
+mage_base_values_pulse = {
+	effect = {
+		if = {
+			limit = {
+				NOT = { has_modifier = mage_base_values }
+			}
+			add_modifier = mage_base_values
+		}
+	}
+}
+
+mage_conversion_monthly_pulse = {
+	effect = {
+		mage_conversion_monthly_effect = yes
+	}
+}
+
+mage_conversion_yearly_pulse = {
+	effect = {
+		mage_conversion_yearly_effect = yes
+	}
+}

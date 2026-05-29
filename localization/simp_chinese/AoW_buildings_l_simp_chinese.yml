@@ -5,7 +5,6 @@
  bg_magic_monuments: "魔法奇观"
 
  # DUMMY
- pm_disabled: "无"
 
  # MINE
  building_gemstone_mine: "宝石矿场"
@@ -38,7 +37,6 @@
  building_healing_solutions_institute: "治疗研究所"
  
  building_magic_tower: "魔能塔"
- building_magic_academy: "魔法学院"
 
  pmg_magic_hat_building_textile_mill: "魔法帽生产"
  pm_no_magic_hat_method: "未启用"
@@ -49,6 +47,11 @@
  pm_no_crystal_transmutation: "未启用"
  pm_glass_thermal_recrystallization: "再结晶"
  pm_glass_aetheric_saturation: "以太饱和"
+
+ pmg_magic_build_construction_sector: "魔法建造"
+ pm_no_magic_build: "无魔法建造"
+ pm_monument_no_effects: "无效果"
+ pm_monument_prestige_only: "仅威望"
 
 # SUBSISTENCE
  pmg_crystal_hunting_subsistence: "水晶收集"

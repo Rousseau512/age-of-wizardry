@@ -21,3 +21,32 @@ state_mages_investment_pool_efficiency_mult={
 		ai_value=0
 	}
 }
+
+state_mage_training_rate = {
+	script_only = yes
+	decimals = 0
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_mage_forget_rate = {
+	script_only = yes
+	percent = yes
+	decimals = 0
+	color = bad
+	game_data = {
+		ai_value = 0
+	}
+}
+
+state_mage_awakening_rate = {
+	script_only = yes
+	percent = yes
+	decimals = 0
+	color = good
+	game_data = {
+		ai_value = 0
+	}
+}

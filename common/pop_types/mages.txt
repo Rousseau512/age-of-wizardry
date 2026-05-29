@@ -57,35 +57,10 @@
 	}
 	qualifications_growth_desc = "MAGES_QUALIFICATIONS_DESC"
 	qualifications = {
-		# baseline: ( wealth - 8 ) * (literacy - 0.3) *1.1
-		add = {
-			value = wealth
-			divide = 10
-			desc = "QUALIFICATIONS_WEALTH_FACTOR"
-		}
-		add = {
-			value = literacy_rate
-			subtract = 0.2
-			multiply = 20
-			desc = "QUALIFICATIONS_LITERACY_FACTOR"
-		}
-		if = {
-			limit = {
-				is_pop_type = laborers
-			}
-			multiply = {
-				value = 1.5
-				desc = "QUALIFICATIONS_FAVORED_TYPE"
-			}
-		}
-		if = {
-			limit = {
-				is_pop_type = machinists
-			}
-			multiply = {
-				value = 2
-				desc = "QUALIFICATIONS_FAVORED_TYPE"
-			}
+		# 法师无法通过资质自然转为法师职业，只能由 change_poptype 转换
+		value = {
+			desc = "QUALIFICATIONS_ONLY_BY_POPTYPE_CHANGE"
+			value = -1
 		}
 	}
 	portrait_age = {

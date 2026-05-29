@@ -5,7 +5,6 @@
  bg_magic_monuments: "Magic Monuments"
 
 # DUMMY
- pm_disabled: "Disabled"
 
 # MINE
 # GEMSTONE MINE
@@ -95,22 +94,11 @@
  pm_assembly_lines_building_transmutation_factory: "Assembly Lines"
 
 #
- building_magic_academy: "Magic Academy"
-
  pmg_base_building_magic_academy: "Magic Academy"
  pm_magical_scholastics: "Magical Scholastics"
  pm_mages_and_society: "mages and Society"
  pm_magic_and_ethics: "Magic and Ethics"
  pm_magic_and_philosophy: "Magic and Philosophy"
- 
- pmg_academy_production: "Arts"
- pm_academy_inactive: "Inactive"
- pm_magic_infused_art_and_culture: "Interactive Art"
-
- pmg_magic_practice: "Magic Practices"
- pm_idle_mode_ac: "No Practicing"
- pm_coal_to_gold_practice: "Coal to Gold practice"
- pm_mass_coal_to_gold_practice: "Mass Coal to Gold practice"
 
 #
 
@@ -155,3 +143,6 @@
  pmg_crystal_hunting_subsistence: "Crystal Hunting"
  pm_crystal_hunting: "Crystal Hunting"
  pmg_magic_build_construction_sector: "Magic Build Construction Sector"
+ pm_no_magic_build: "No Magic Build"
+ pm_monument_no_effects: "No Effects"
+ pm_monument_prestige_only: "Prestige Only"

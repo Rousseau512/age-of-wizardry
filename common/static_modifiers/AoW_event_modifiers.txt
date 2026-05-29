@@ -1,5 +1,4 @@
-﻿
-stormed_building_throughput_mana_mult_01 = {
+﻿stormed_building_throughput_mana_mult_01 = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
 	state_infrastructure_mult = 2
 	goods_output_mana_add = -25
@@ -8,4 +7,13 @@ stormed_building_throughput_mana_mult_01 = {
 modifier_magic_drained = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
 	goods_output_mana_mult = -0.5
+}
+
+mage_base_values = {
+	icon = gfx/interface/icons/pops_icons/mages.dds
+	
+	is_hidden = yes
+	
+	state_mage_forget_rate = 0.5
+	state_mage_awakening_rate = 0.01
 }

@@ -1,0 +1,146 @@
+# 每月法师转换（轻量操作：加法 + 转化）
+mage_conversion_monthly_effect = {
+	# 1. 初始化池
+	if = {
+		limit = {
+			NOT = { exists = var:mage_training_pool }
+		}
+		set_variable = {
+			name = mage_training_pool
+			value = 0
+		}
+	}
+
+	# 2. 每月增加训练量（来自建筑）
+	change_variable = {
+		name = mage_training_pool
+		add = modifier:state_mage_training_rate
+	}
+
+	# 3. 检查转化条件：池 >= 1000 且有法师岗位需求
+	if = {
+		limit = {
+			var:mage_training_pool >= 1000
+			any_scope_building = {
+				NOT = {
+					has_employee_slots_filled = {
+						pop_type = mages
+						percent = 0.95
+					}
+				}
+			}
+		}
+
+		# 4. 初始化遍历索引与终止标记
+		set_variable = {
+			name = mage_conversion_index
+			value = 0
+		}
+		set_variable = {
+			name = mage_conversion_done
+			value = 0
+		}
+
+		# 5. 从大到小遍历非法师 pop，只转换 size <= pool 的群体
+		while = {
+			limit = {
+				var:mage_training_pool >= 1000
+				var:mage_conversion_done = 0
+			}
+
+			# 取当前索引位置的非法师 pop（降序：最大在前）
+			ordered_scope_pop = {
+				limit = {
+					NOT = { is_pop_type = mages }
+				}
+				order_by = {
+					value = total_size
+					multiply = -1
+				}
+				position = var:mage_conversion_index
+				check_range_bounds = no
+				save_scope_as = current_pop
+			}
+
+			if = {
+				limit = {
+					NOT = { exists = scope:current_pop }
+				}
+				# 已无更多非法师 pop，终止遍历
+				set_variable = {
+					name = mage_conversion_done
+					value = 1
+				}
+			}
+			else_if = {
+				limit = {
+					var:mage_training_pool >= scope:current_pop.total_size
+				}
+				# 池足够支付该 pop：转换
+				change_variable = {
+					name = mage_training_pool
+					subtract = scope:current_pop.total_size
+				}
+				scope:current_pop = {
+					change_poptype = pop_type:mages
+				}
+				# 索引不变：下一个 pop 已滑到当前位置
+			}
+			else = {
+				# 池不够支付该 pop：跳过，检查下一个
+				change_variable = {
+					name = mage_conversion_index
+					add = 1
+				}
+			}
+		}
+	}
+}
+
+# 每年法师遗忘与自然觉醒（昂贵操作：乘法 + 遍历人口）
+mage_conversion_yearly_effect = {
+	# 0. 初始化池（月度可能尚未触发）
+	if = {
+		limit = {
+			NOT = { exists = var:mage_training_pool }
+		}
+		set_variable = {
+			name = mage_training_pool
+			value = 0
+		}
+	}
+
+	# 1. 遗忘：pool *= (1 - modifier:state_mage_forget_rate)
+	# modifier:state_mage_forget_rate 已含 static_modifier 提供的 50% 基础值
+	set_variable = {
+		name = mage_keep_rate
+		value = 1
+	}
+	change_variable = {
+		name = mage_keep_rate
+		subtract = modifier:state_mage_forget_rate
+	}
+	change_variable = {
+		name = mage_training_pool
+		multiply = var:mage_keep_rate
+	}
+
+	# 2. 自然觉醒：pool += total_population * modifier:state_mage_awakening_rate
+	# modifier:state_mage_awakening_rate 已含 static_modifier 提供的 1% 基础值
+	set_variable = {
+		name = mage_awakening_amount
+		value = 0
+	}
+	change_variable = {
+		name = mage_awakening_amount
+		add = sv:state_total_population
+	}
+	change_variable = {
+		name = mage_awakening_amount
+		multiply = modifier:state_mage_awakening_rate
+	}
+	change_variable = {
+		name = mage_training_pool
+		add = var:mage_awakening_amount
+	}
+}

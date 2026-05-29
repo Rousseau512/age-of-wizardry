@@ -2,3 +2,8 @@
 	texture = "gfx/interface/icons/production_method_icons/disabled.dds"
 	is_default = yes
 }
+
+REPLACE_OR_CREATE:pm_no_magic_build = {
+	texture = "gfx/interface/icons/production_method_icons/disabled.dds"
+	is_default = yes
+}

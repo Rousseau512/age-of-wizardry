@@ -1,6 +1,10 @@
 ﻿gui_sidebar_aow_button = {
 	scope = country
 
+	is_shown = {
+		flag:gui_sidebar_aow_button = yes
+	}
+
 	effect = {
 		# set_variable = {
         #     name = aow_base_panel_active_tab

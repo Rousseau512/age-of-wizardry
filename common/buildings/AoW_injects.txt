@@ -3,3 +3,9 @@
 		pmg_magic_hat_building_textile_mill
 	}
 }
+
+INJECT:building_university = {
+	production_method_groups = {
+		pmg_base_building_magic_academy
+	}
+}

@@ -1,5 +1,16 @@
 ﻿l_english:
-  # Scripted gui used by button
-  gui_sidebar_aow_button: "gui_sidebar_aow_button"
-  # Name of the button that is shown in the hover popout
-  gui_sidebar_aow_button_desc: "Wizardry"
+ # DLC
+ dlc_aow: "Age of Wizardry"
+ dlc_aow_desc: "Magic meets industrialization in Earth 9981, where wizards, enchanted weapons, and arcane rituals reshape the Victorian era."
+
+ # Scripted gui used by button
+ gui_sidebar_aow_button: "gui_sidebar_aow_button"
+ # Name of the button that is shown in the hover popout
+ gui_sidebar_aow_button_desc: "Wizardry"
+ STATE_MAGE_POOL: "[concept_mage_potential]\n[State.MakeScope.ScriptValue('state_mage_pool_display')|0]"
+ STATE_MAGE_POOL_TEXT: "Mage Potential"
+ STATE_MAGE_POOL_TOOLTIP: "#header @mages! $STATE_MAGE_POOL_TEXT$#!\n$STATE_MAGE_POOL_TOOLTIP_TEXT$\n$TOOLTIP_DELIMITER$\nCurrent pool: [State.MakeScope.ScriptValue('state_mage_pool_display')|0]\nMonthly Training: #tooltippable #tooltip:[State.GetTooltipTag],STATE_MAGE_TRAINING_BREAKDOWN [State.MakeScope.ScriptValue('state_mage_training_rate')|0]#!#!\nForgetting: #tooltippable #tooltip:[State.GetTooltipTag],STATE_MAGE_FORGET_BREAKDOWN [State.MakeScope.ScriptValue('state_mage_effective_forget_rate')|%0]#!#!/year\nAwakening: #tooltippable #tooltip:[State.GetTooltipTag],STATE_MAGE_AWAKENING_BREAKDOWN [State.MakeScope.ScriptValue('state_mage_effective_awakening_rate')|%0]#!#!/year"
+ STATE_MAGE_POOL_TOOLTIP_TEXT: "Trained individuals who are ready to become mages."
+ STATE_MAGE_TRAINING_BREAKDOWN: "#header Monthly Mage Training#!\n[State.MakeScope.ScriptValue('state_mage_training_rate')|0] candidates/month in [State.GetName]\n$TOOLTIP_DELIMITER$\n[State.GetModifier.GetFullEntryDescFor('state_mage_training_rate')]"
+ STATE_MAGE_FORGET_BREAKDOWN: "#header Annual Forgetting Rate#!\n[State.MakeScope.ScriptValue('state_mage_effective_forget_rate')|%0] per year in [State.GetName]\n$TOOLTIP_DELIMITER$\n[State.GetModifier.GetFullEntryDescFor('state_mage_forget_rate')]"
+ STATE_MAGE_AWAKENING_BREAKDOWN: "#header Annual Awakening Rate#!\n[State.MakeScope.ScriptValue('state_mage_effective_awakening_rate')|%0] per year in [State.GetName]\n$TOOLTIP_DELIMITER$\n[State.GetModifier.GetFullEntryDescFor('state_mage_awakening_rate')]"

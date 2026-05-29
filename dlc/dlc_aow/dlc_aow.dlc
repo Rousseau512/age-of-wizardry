@@ -1,0 +1,8 @@
+name = "Age of Wizardry"
+path = "dlc/dlc_aow"
+steam_id = "0"
+pops_id = "dlc_aow"
+mp_synced = yes
+affects_save_compatibility = yes
+localizable_name = "dlc_aow"
+checksum = ""

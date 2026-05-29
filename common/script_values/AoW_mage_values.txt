@@ -1,0 +1,30 @@
+# 每月法师训练量（来自建筑、修正）
+state_mage_training_rate = {
+	value = 0
+	add = modifier:state_mage_training_rate
+}
+
+# 州总人口
+state_total_population = {
+	value = 0
+	every_scope_pop = {
+		add = total_size
+	}
+}
+
+# 有效遗忘率 = modifier 总和（基础 50% 来自 static_modifier）
+state_mage_effective_forget_rate = {
+	value = 0
+	add = modifier:state_mage_forget_rate
+}
+
+# 有效自然觉醒率 = modifier 总和（基础 1% 来自 static_modifier）
+state_mage_effective_awakening_rate = {
+	value = 0
+	add = modifier:state_mage_awakening_rate
+}
+
+# 法师潜力池显示（供 GUI 读取）
+state_mage_pool_display = {
+	value = var:mage_training_pool
+}

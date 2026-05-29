@@ -28,7 +28,7 @@ mages became an integral part of society, with their use of magic became widespr
 As the Age of Wizardry continued to evolve, the use of magic becomes more refined and sophisticated, promising a bright future for Earth 9981 as mages and non-mages alike collaborate towards a common goal.
 
 [h1] Compatibility [/h1]
-Game Version: 1.12
+Game Version: 1.13.*
 [b]If you would like to see compatibility with a specific mod, please leave a comment and I will try my best to implement it.[/b]
 
 [h1] Future Plans [/h1]

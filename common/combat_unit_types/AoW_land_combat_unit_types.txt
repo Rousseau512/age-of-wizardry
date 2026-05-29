@@ -115,7 +115,7 @@ REPLACE_OR_CREATE:combat_unit_type_runic_artillery = {
 
     formation_modifier = {
         military_formation_mobilization_speed_mult = -0.3
-        military_formation_movement_speed_mult = -0.2
+        military_formation_army_movement_speed_mult = -0.2
     }
 
     unlocking_technologies = { magic_artillery_9981 }
@@ -193,7 +193,7 @@ REPLACE_OR_CREATE:combat_unit_type_magitek_artillery = {
 
     formation_modifier = {
         military_formation_mobilization_speed_mult = -0.3
-        military_formation_movement_speed_mult = -0.3
+        military_formation_army_movement_speed_mult = -0.3
     }
 
     unlocking_technologies = { ultimate_magic_tower_9981 }

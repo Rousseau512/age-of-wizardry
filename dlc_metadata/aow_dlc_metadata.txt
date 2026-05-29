@@ -1,0 +1,6 @@
+dlc_aow = {
+	name = "Age of Wizardry"
+	steam_id = "0"
+	type = minor
+	priority = 0
+}
